@@ -1,5 +1,6 @@
 <h1>Employees</h1>
 <ul>
-  <li>Diego</li>
-  <li>Fritz</li>
+  <% @employees.each do |employee| %>
+    <li><%= employee %></li>
+  <% end %>
 </ul>
