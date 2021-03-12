@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :kinds
-  get '/test', to: 'kinds#index'
+  # get 'about/index'
+  get 'about', to: 'about#index'
+  get 'about/employees'
+  resources :kindas
+  get 'test', to: 'kinds#index'
   root to: 'kinds#index'
 end
